@@ -1,0 +1,214 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #1a1a1a;
+}
+
+/* Cabecera */
+.main-header {
+    background-color: #faa3d9; /* Color rosa vibrante */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 110px;
+}
+
+/* Sección hero con imagen destacada */
+.hero-section {
+    background-color: #c1066a;
+    padding: 20px;
+}
+
+.hero-image {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.discografia {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.disco-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* Estilos de las imágenes de los discos en la sección de discografía */
+.disco-cover {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px; /* Bordes redondeados para las carátulas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    transition: transform 0.3s ease; /* Transición suave para el efecto de agrandamiento */
+}
+
+/* Agrandar la imagen cuando se pasa el ratón sobre ella */
+.disco-cover:hover {
+    transform: scale(1.1); /* Escala la imagen a un 110% de su tamaño original */
+}
+
+
+.canciones-destacadas {
+    background-color: #f3e5f5;
+    padding: 40px;
+    text-align: center; 
+}
+
+.iconic-songs {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto; 
+    display: inline-block; 
+}
+
+.iconic-songs li {
+    font-size: 20px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.iconic-songs i {
+    margin-right: 10px;
+    color: #ff6ec7;
+}
+
+/* Nuevo álbum */
+.nuevo-album {
+    background-color: #e68f8f;
+    padding: 40px;
+}
+
+.album-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.album-cover {
+    width: 220px;
+    border-radius: 10px;
+}
+
+/* Tour Mundial */
+.tour-mundial {
+    background-color: #e1bee7;
+    padding: 40px;
+}
+
+.tour-dates {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tour-dates li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer a {
+    color: #ff6ec7;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.cancion-imagen {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; /* Hacer que la imagen sea redonda */
+    margin-left: 15px; /* Espacio entre la canción y la imagen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para destacar las imágenes */
+}
+
+
+
+
+
+/* Modo oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .main-header {
+    background-color: #000000;
+}
+
+.dark-mode .hero-section {
+    background-color: #64034c;
+}
+
+.dark-mode .nuevo-album, 
+.dark-mode .tour-mundial, 
+.dark-mode .canciones-destacadas {
+    background-color: #222222;
+}
+
+.dark-mode .footer {
+    background-color: #a80505;
+}
+
+.dark-mode .disco-cover {
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode a {
+    color: #bb86fc;
+}
+
+.dark-mode .disco-gallery {
+    background-color: #47032d;
+}
+
+.dark-mode .discografia {
+    background-color: #47032d;
+}
+
+.dark-mode .titulo-discografia {
+
+    color: #ffffff;
+}
+
+.dark-mode .destacadas {
+
+    color: #ffffff;
+}
+
+.dark-mode .fanpage {
+    color: #ffffff;
+}
+
+
