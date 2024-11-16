@@ -350,3 +350,88 @@ body.dark-mode .lyrics-display {
 body.dark-mode .lyrics-display p {
     color: #ffffff; /* White text */
 }
+
+/* Responsive styles */
+
+/* General adjustments for smaller screens */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .disco-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .disco-cover {
+        width: 100px;
+        height: 100px;
+    }
+
+    .album-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .album-cover {
+        width: 150px;
+    }
+
+    .tour-dates li {
+        font-size: 16px;
+    }
+
+    .iconic-songs li {
+        font-size: 18px;
+        flex-direction: column;
+    }
+
+    .cancion-imagen {
+        margin: 10px 0 0;
+    }
+
+    .lyrics-section {
+        padding: 20px;
+    }
+
+    .lyrics-display {
+        max-height: 300px;
+    }
+
+    footer {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/* Adjustments for very small screens (e.g., phones) */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    button, input {
+        font-size: 14px;
+    }
+
+    .tour-dates li {
+        font-size: 14px;
+    }
+
+    .lyrics-display {
+        padding: 10px;
+        font-size: 1em;
+    }
+}
