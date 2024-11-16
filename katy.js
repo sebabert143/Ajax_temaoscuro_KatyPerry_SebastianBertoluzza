@@ -65,7 +65,7 @@ document.getElementById('katyroar').addEventListener('click', function() {
 });
 
 
-// Add a loading spinner to indicate loading
+// carga indicador
 function showLoadingSpinner(container) {
     const spinner = document.createElement('div');
     spinner.className = 'loading-spinner';
@@ -80,7 +80,7 @@ function hideLoadingSpinner(container) {
     }
 }
 
-// Enhanced loadPage function with loading spinner and feedback
+// spiner
 function loadPageWithFeedback(pageUrl, container) {
     showLoadingSpinner(container);
     fetch(pageUrl)
@@ -102,7 +102,7 @@ function loadPageWithFeedback(pageUrl, container) {
         });
 }
 
-// Replace existing loadPage calls
+// 
 document.getElementById('teenagemusic').addEventListener('click', function() {
     loadPageWithFeedback('page1.html', 'contentContainer');
 });
@@ -123,7 +123,7 @@ document.getElementById('katyroar').addEventListener('click', function() {
     loadPageWithFeedback('page5.html', 'singleskaty');
 });
 
-// Implement lazy loading for images
+// carga lazy
 document.addEventListener('DOMContentLoaded', function() {
     const lazyImages = document.querySelectorAll('img[data-src]');
     const imageObserver = new IntersectionObserver((entries, observer) => {
@@ -159,7 +159,7 @@ document.getElementById('lyrics-form').addEventListener('submit', function(event
     const song = document.getElementById('song-input').value.trim();
     const lyricsContainer = document.getElementById('lyrics-display');
     const lyricsOutput = document.getElementById('lyrics-output');
-    const artist = 'Katy Perry'; // Fixed default artist
+    const artist = 'Katy Perry'; // solo katy
 
     if (!song) {
         lyricsOutput.textContent = 'Por favor, ingresa el nombre de una canción.';
@@ -168,9 +168,9 @@ document.getElementById('lyrics-form').addEventListener('submit', function(event
     }
 
     lyricsOutput.innerHTML = '<p>Cargando...</p>';
-    lyricsContainer.style.display = 'block'; // Show the container during the loading process
+    lyricsContainer.style.display = 'block'; // mostrar container en la carga
 
-    // Fetch lyrics from API
+    // Fetch lyrics api
     fetch(`https://api.lyrics.ovh/v1/${encodeURIComponent(artist)}/${encodeURIComponent(song)}`)
         .then(response => {
             if (!response.ok) {
@@ -181,7 +181,7 @@ document.getElementById('lyrics-form').addEventListener('submit', function(event
         .then(data => {
             const { lyrics } = data;
             if (lyrics) {
-                // Split lyrics into lines and wrap each line in a paragraph
+                // organizar letra
                 const formattedLyrics = lyrics
                     .split('\n')
                     .map(line => `<p>${line}</p>`)

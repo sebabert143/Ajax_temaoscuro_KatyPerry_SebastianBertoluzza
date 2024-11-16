@@ -215,45 +215,45 @@ h1, h2 {
 
 /* Dark mode improvements */
 body.dark-mode {
-    background-color: #121212; /* Deep dark background for better contrast */
-    color: #e0e0e0; /* Softer white for reduced strain */
+    background-color: #121212; 
+    color: #e0e0e0; 
 }
 
 body.dark-mode h1, body.dark-mode h2 {
-    color: #ffffff; /* Bright white for titles to stand out */
+    color: #ffffff; 
 }
 
 body.dark-mode .main-header {
-    background-color: #1f1f1f; /* Subtle dark for the header */
-    border-bottom: 2px solid #333333; /* Adds a cleaner separation */
+    background-color: #1f1f1f; 
+    border-bottom: 2px solid #333333; 
 }
 
 body.dark-mode .footer {
-    background-color: #a40623; /* Matches overall dark theme */
-    color: #bbbbbb; /* Softer text color for footer */
+    background-color: #a40623; 
+    color: #bbbbbb; 
 }
 
 body.dark-mode a {
-    color: #bb86fc; /* Purple hue for links */
+    color: #bb86fc; 
 }
 
 body.dark-mode a:hover {
-    color: #ffffff; /* White on hover for clarity */
+    color: #ffffff; 
 }
 
 body.dark-mode .disco-cover:hover {
-    transform: scale(1.15); /* Slightly larger hover effect for interactivity */
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); /* Enhanced glow effect */
+    transform: scale(1.15); 
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2); 
 }
 
 /* Dark mode for iframe content */
 body.dark-mode iframe {
-    background-color: #1c1c1c; /* Dark background for embedded content */
-    border: none; /* Clean look */
+    background-color: #1c1c1c; 
+    border: none; 
 }
 
 
-/* Loading spinner styles */
+
 .loading-spinner {
     display: flex;
     justify-content: center;
@@ -292,7 +292,7 @@ body.dark-mode iframe {
 }
 
 
-/* Styles for expandable lyrics display */
+
 .lyrics-display {
     display: none;
     margin-top: 20px;
@@ -313,7 +313,7 @@ body.dark-mode iframe {
 }
 
 
-/* Enhanced styling for lyrics display */
+
 .lyrics-display {
     display: none;
     margin-top: 20px;
@@ -336,24 +336,24 @@ body.dark-mode iframe {
     line-height: 1.5;
 }
 
-/* Apply consistent typography across the entire page */
+
 body, h1, h2, p, input, button {
-    font-family: 'Georgia', serif; /* Delicate typography */
+    font-family: 'Georgia', serif; 
 }
 
 
-/* Dark mode styling for lyrics display */
+/* modo oscuro */
 body.dark-mode .lyrics-display {
-    background-color: #c2185b; /* Dark pink background */
+    background-color: #c2185b; /* rosa fuerte */
 }
 
 body.dark-mode .lyrics-display p {
     color: #ffffff; /* White text */
 }
 
-/* Responsive styles */
+/* Responsive */
 
-/* General adjustments for smaller screens */
+/* pantalla chicas */
 @media (max-width: 768px) {
     .main-header {
         flex-direction: column;
@@ -412,7 +412,7 @@ body.dark-mode .lyrics-display p {
     }
 }
 
-/* Adjustments for very small screens (e.g., phones) */
+/* pantallas muy chicas */
 @media (max-width: 480px) {
     h1, h2 {
         font-size: 1.5em;
